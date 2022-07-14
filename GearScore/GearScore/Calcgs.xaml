@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Calculo de gear score"
+             x:Class="GearScore.Calcgs">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#5e6165">
+                <Frame BackgroundColor="#161719" Padding="24" CornerRadius="0">
+                    <Label Text="Calculo de GS" HorizontalTextAlignment="Center" TextColor="White" FontSize="50" FontAttributes="Bold"/>
+                </Frame>
+                <StackLayout HorizontalOptions="CenterAndExpand" WidthRequest="250">
+                    <Label Text="Ataque Principal" TextColor="WhiteSmoke" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="AP" x:Name="ap" TextColor="WhiteSmoke" PlaceholderColor="AntiqueWhite" Keyboard="Numeric" HorizontalTextAlignment="Center" BackgroundColor="#5e6165"/>
+                    <Label Text="Ataque despertado" TextColor="WhiteSmoke" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="AAP" x:Name="aap" TextColor="WhiteSmoke" PlaceholderColor="AntiqueWhite" Keyboard="Numeric" HorizontalTextAlignment="Center" BackgroundColor="#5e6165"/>
+                    <Label Text="Defensa" TextColor="WhiteSmoke" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="DP" x:Name="dp" TextColor="WhiteSmoke" PlaceholderColor="AntiqueWhite" Keyboard="Numeric" HorizontalTextAlignment="Center" BackgroundColor="#5e6165"/>
+                    <Label Text="Gear score" TextColor="WhiteSmoke" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="gs" x:Name="gs" IsEnabled="False" TextColor="WhiteSmoke" PlaceholderColor="AntiqueWhite" HorizontalTextAlignment="Center" BackgroundColor="#5e6165"/>
+                    <Button Text="Calcular" Clicked="Button_Clicked" TextColor="WhiteSmoke" BackgroundColor="#161719" FontSize="Medium"/>
+                    <Button Text="Borrar" Clicked="Button_Clicked_1" TextColor="WhiteSmoke" BackgroundColor="#161719" FontSize="Medium"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

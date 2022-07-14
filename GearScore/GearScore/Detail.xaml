@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GearScore"
+             Title="Bienvenido"
+             BackgroundColor="DimGray"
+             
+             x:Class="GearScore.Detail">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#5e6165">
+                <Grid RowDefinitions="*,*" BackgroundColor="#5e6165" ColumnDefinitions="*,*">
+                    <Button BackgroundColor="#161719" Clicked="btncalcgs_Clicked" Grid.Row="0" Grid.Column="0" Image="ic_calcgs.png"></Button>
+                    <Button BackgroundColor="#161719" Clicked="btncapmenu_Clicked" Grid.Row="0" Grid.Column="1" Image="ic_capras.png"></Button>
+                    <Button BackgroundColor="#161719" Clicked="btncronmenu_Clicked" Grid.Row="1" Grid.Column="0" Image="ic_crons.png"></Button>
+                    <Button BackgroundColor="#161719" Clicked="btnbramenu_Clicked" Grid.Row="1" Grid.Column="1" Image="ic_brakets.png" ></Button>
+                </Grid>
+                <WebView x:Name="Video" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#5e6165"></WebView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

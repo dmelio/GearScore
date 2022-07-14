@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Tabla de caphras"
+             x:Class="GearScore.Caphras">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Center">
+                <Frame>
+                    <Label Text="Caphras" FontSize="50"></Label>
+                </Frame>
+                <Label Text="Selecciona item"></Label>
+                <Picker x:Name="pickItem" SelectedIndexChanged="pickItem_SelectedIndexChanged"></Picker>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

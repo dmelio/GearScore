@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Brackets"
+             x:Class="GearScore.Brackets">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout HorizontalOptions="Center" BackgroundColor="#5e6165">
+                    <Frame BackgroundColor="#161719" Padding="24" CornerRadius="0">
+                        <Label HorizontalOptions="Center" TextColor="White" Text="Brackets" FontSize="50"></Label>
+                    </Frame>
+                    <Grid ColumnDefinitions="*,*">
+                        <Button Text="AP" Grid.Column="0" Clicked="Button_Clickedap" x:Name="btnAP" TextColor="White" BackgroundColor="#161719"></Button>
+                        <Button Text="DP" Grid.Column="1" Clicked="Button_Clickeddp" x:Name="btnDP" TextColor="White" BackgroundColor="#161719"></Button>
+                    </Grid>
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*" HorizontalOptions="Center" x:Name="GridAP" BackgroundColor="#161719">
+                        <Label TextColor="WhiteSmoke" Text="AP bracket" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="Bonus AP" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="100-139" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="5" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="140-169" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="10" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="170–183" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="15" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="184-208" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="20" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="209-234" Grid.Row="5" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="30" Grid.Row="5" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="235-244" Grid.Row="6" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="40" Grid.Row="6" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="245-248" Grid.Row="7" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="48" Grid.Row="7" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="249-252" Grid.Row="8" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="57" Grid.Row="8" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="253-256" Grid.Row="9" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="69" Grid.Row="9" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="257-260" Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="83" Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="261-264" Grid.Row="11" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="101" Grid.Row="11" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="265-268" Grid.Row="12" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="122" Grid.Row="12" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="269-272" Grid.Row="13" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="137" Grid.Row="13" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="273-276" Grid.Row="14" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="142" Grid.Row="14" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="277-280" Grid.Row="15" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="148" Grid.Row="15" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="281-284" Grid.Row="16" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="154" Grid.Row="16" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="285-288" Grid.Row="17" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="160" Grid.Row="17" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="289-292" Grid.Row="18" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="167" Grid.Row="18" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="293-296" Grid.Row="19" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="174" Grid.Row="19" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="297-300" Grid.Row="20" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="181" Grid.Row="20" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="301-304" Grid.Row="21" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="188" Grid.Row="21" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="305-308" Grid.Row="22" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="196" Grid.Row="22" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="309-315" Grid.Row="23" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="200" Grid.Row="23" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="316-322" Grid.Row="24" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="203" Grid.Row="24" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="323-329" Grid.Row="25" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="205" Grid.Row="25" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="330-339" Grid.Row="26" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="207" Grid.Row="26" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="340 +" Grid.Row="27" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="210" Grid.Row="27" Grid.Column="1" HorizontalOptions="Center"/>
+                    </Grid>
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*" HorizontalOptions="Center" x:Name="GridDP" IsVisible="false" BackgroundColor="#161719">
+                        <Label TextColor="WhiteSmoke" Text="DP bracket" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="Extra DR" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="203-210" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="1%" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="211-217" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="2%" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="218-225" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="3%" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="226-232" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="4%" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="233-240" Grid.Row="5" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="5%" Grid.Row="5" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="241-247" Grid.Row="6" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="6%" Grid.Row="6" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="248-255" Grid.Row="7" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="7%" Grid.Row="7" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="256-262" Grid.Row="8" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="8%" Grid.Row="8" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="263-270" Grid.Row="9" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="9%" Grid.Row="9" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="271-277" Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="10%" Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="278-285" Grid.Row="11" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="11%" Grid.Row="11" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="286-292" Grid.Row="12" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="12%" Grid.Row="12" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="293-300" Grid.Row="13" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="13%" Grid.Row="13" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="301-307" Grid.Row="14" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="14%" Grid.Row="14" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="308-314" Grid.Row="15" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="15%" Grid.Row="15" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="315-321" Grid.Row="16" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="16%" Grid.Row="16" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="322-328" Grid.Row="17" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="17%" Grid.Row="17" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="329-334" Grid.Row="18" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="18%" Grid.Row="18" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="335-340" Grid.Row="19" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="19%" Grid.Row="19" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="341-346" Grid.Row="20" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="20%" Grid.Row="20" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="347-352" Grid.Row="21" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="21%" Grid.Row="21" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="353-358" Grid.Row="22" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="22%" Grid.Row="22" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="359-364" Grid.Row="23" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="23%" Grid.Row="23" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="365-370" Grid.Row="24" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="24%" Grid.Row="24" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="371-376" Grid.Row="25" Grid.Column="0" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="25%" Grid.Row="25" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="377-382" Grid.Row="26" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="26%" Grid.Row="26" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="383-388" Grid.Row="27" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="27%" Grid.Row="27" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="389-394" Grid.Row="28" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="28%" Grid.Row="28" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="395-400" Grid.Row="29" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="29%" Grid.Row="29" Grid.Column="1" HorizontalOptions="Center"/>
+                        <Label TextColor="WhiteSmoke" Text="401+" Grid.Row="30" Grid.Column="0" HorizontalOptions="Center" />
+                        <Label TextColor="WhiteSmoke" Text="30%" Grid.Row="30" Grid.Column="1" HorizontalOptions="Center"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
