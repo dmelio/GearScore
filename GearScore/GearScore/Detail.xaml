@@ -15,7 +15,7 @@
                     <Button BackgroundColor="#161719" Clicked="btncronmenu_Clicked" Grid.Row="1" Grid.Column="0" Image="ic_crons.png"></Button>
                     <Button BackgroundColor="#161719" Clicked="btnbramenu_Clicked" Grid.Row="1" Grid.Column="1" Image="ic_brakets.png" ></Button>
                 </Grid>
-                <WebView x:Name="Video" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#5e6165"></WebView>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

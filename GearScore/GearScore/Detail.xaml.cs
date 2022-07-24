@@ -15,11 +15,6 @@ namespace GearScore
         public Detail()
         {
             InitializeComponent();
-            var htmlcontent = new HtmlWebViewSource();
-            htmlcontent.Html = "<html><head></head><body>" +
-                "<a>Videito<a><br> " +
-                "<iframe src='https://www.youtube.com/embed/3xmr1JnexIc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></body></html>";
-            Video.Source = htmlcontent;
         }
         private void btncapmenu_Clicked(object sender, EventArgs e)
         {
