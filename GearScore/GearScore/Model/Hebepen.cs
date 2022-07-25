@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GearScore
+namespace GearScore.Model
 {
     public class Hebepen
     {

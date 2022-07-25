@@ -8,23 +8,31 @@ using Xamarin.Forms;
 
 namespace GearScore
 {
-    public partial class MainPage : FlyoutPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            flyout.listview.ItemSelected += OnSelectedItem;
         }
 
-        private void OnSelectedItem(object sender, SelectedItemChangedEventArgs e)
+        private void btncapmenu_Clicked(object sender, EventArgs e)
         {
-            var item = e.SelectedItem as FlyoutItemPage;
-            if(item != null)
-            {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetPage));
-                flyout.listview.SelectedItem = null;
-                IsPresented = false;
-            }
+            this.Navigation.PushModalAsync(new Caphras());
+        }
+
+        private void btncronmenu_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new Crons());
+        }
+
+        private void btnbramenu_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new Brackets());
+        }
+
+        private void btncalcgs_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new Calcgs());
         }
     }
 }

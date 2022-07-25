@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:GearScore"
              x:Class="GearScore.MainPage"
              Title="Menu">
-    <FlyoutPage.Flyout>
-        <local:FlyoutMenuPage x:Name="flyout" BackgroundColor="#5e6165"/>
-    </FlyoutPage.Flyout>
-    <FlyoutPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <local:Detail></local:Detail>
-            </x:Arguments>
-        </NavigationPage>
-    </FlyoutPage.Detail>
-</FlyoutPage>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#5e6165">
+                <Grid RowDefinitions="*,*" BackgroundColor="#5e6165">
+                    <Button BackgroundColor="#161719" Text="GearScore" TextColor="WhiteSmoke" Clicked="btncalcgs_Clicked" Grid.Row="0" Image="ic_calcgs.png"  HorizontalOptions="FillAndExpand"></Button>
+                    <Button BackgroundColor="#161719" Text="Caphras" TextColor="Gold" Clicked="btncapmenu_Clicked" Grid.Row="1"  Image="ic_capras.png"></Button>
+                    <Button BackgroundColor="#161719" Text="Cron" TextColor="DeepSkyBlue" Clicked="btncronmenu_Clicked" Grid.Row="2" Image="ic_crons.png"></Button>
+                    <Button BackgroundColor="#161719" Text="Brackets DP y AP" TextColor="WhiteSmoke" Clicked="btnbramenu_Clicked" Grid.Row="3" Image="ic_brakets.png" ></Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -16,24 +16,6 @@ namespace GearScore
         {
             InitializeComponent();
         }
-        private void btncapmenu_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new Caphras());
-        }
 
-        private void btncronmenu_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new Crons());
-        }
-
-        private void btnbramenu_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new Brackets());
-        }
-
-        private  void btncalcgs_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new Calcgs());
-        }
     }
 }

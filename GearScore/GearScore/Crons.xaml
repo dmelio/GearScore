@@ -4,10 +4,34 @@
              Title="Tabla de cron"
              x:Class="GearScore.Crons">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="cron"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#5e6165">
+            <Frame BackgroundColor="#161719">
+                <Label Text="Cron" FontSize="50" TextColor="DeepSkyBlue" HorizontalOptions="Center"/>
+            </Frame>
+            <StackLayout>
+                <Label Text="Selecciona un Item"/>
+                <Picker Title="Item" x:Name="Itemcronpick" ItemsSource="{Binding Crones}" ItemDisplayBinding="{Binding Nombre}" SelectedIndexChanged="Itemcronpick_SelectedIndexChanged"></Picker>
+                <Grid Padding="10" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition  Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="20" Text="Base" Grid.Column="0" Grid.Row="1" TextColor="#161719" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Entry x:Name="itembase" FontSize="20" Grid.Row="1" Grid.Column="1" TextColor="WhiteSmoke" IsReadOnly="True" VerticalOptions="Center"/>
+                    <Label FontSize="20" Text="Pri" Grid.Column="0" Grid.Row="2" TextColor="#161719" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Entry x:Name="itemPri" FontSize="20" Grid.Row="2" Grid.Column="1"  TextColor="WhiteSmoke" IsReadOnly="True" VerticalOptions="Center"/>
+                    <Label FontSize="20" Text="Duo" Grid.Column="0" Grid.Row="3" TextColor="#161719" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Entry x:Name="itemDuo" FontSize="20" Grid.Row="3" Grid.Column="1"  TextColor="WhiteSmoke" IsReadOnly="True" VerticalOptions="Center"/>
+                    <Label FontSize="20" Text="Tri" Grid.Column="0" Grid.Row="4" TextColor="#161719" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Entry x:Name="itemTri" FontSize="20" Grid.Row="4" Grid.Column="1"  TextColor="WhiteSmoke" IsReadOnly="True" VerticalOptions="Center"/>
+                    <Label FontSize="20" Text="Tet" Grid.Column="0" Grid.Row="5" TextColor="#161719" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Entry x:Name="itemTet" FontSize="20" Grid.Row="5" Grid.Column="1"  TextColor="WhiteSmoke" IsReadOnly="True" VerticalOptions="Center"/>
+                </Grid>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

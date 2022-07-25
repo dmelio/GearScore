@@ -4,19 +4,6 @@
              xmlns:local="clr-namespace:GearScore"
              Title="Bienvenido"
              BackgroundColor="DimGray"
-             
              x:Class="GearScore.Detail">
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout BackgroundColor="#5e6165">
-                <Grid RowDefinitions="*,*" BackgroundColor="#5e6165" ColumnDefinitions="*,*">
-                    <Button BackgroundColor="#161719" Clicked="btncalcgs_Clicked" Grid.Row="0" Grid.Column="0" Image="ic_calcgs.png"></Button>
-                    <Button BackgroundColor="#161719" Clicked="btncapmenu_Clicked" Grid.Row="0" Grid.Column="1" Image="ic_capras.png"></Button>
-                    <Button BackgroundColor="#161719" Clicked="btncronmenu_Clicked" Grid.Row="1" Grid.Column="0" Image="ic_crons.png"></Button>
-                    <Button BackgroundColor="#161719" Clicked="btnbramenu_Clicked" Grid.Row="1" Grid.Column="1" Image="ic_brakets.png" ></Button>
-                </Grid>
-                
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+    
 </ContentPage>

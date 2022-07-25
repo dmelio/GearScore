@@ -2,41 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Tabla de caphras"
+             BackgroundColor="#161719"
              x:Class="GearScore.Caphras">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout HorizontalOptions="Center">
-                <Frame BackgroundColor="Black">
-                    <Label Text="Caphras" FontSize="50" HorizontalOptions="Center"/>
+            <StackLayout BackgroundColor="#5e6165">
+                <Frame BackgroundColor="#161719">
+                    <Label Text="Caphras" FontSize="50" HorizontalOptions="Center" TextColor="Gold"/>
                 </Frame>
-                <Label Text="Selecciona un item"/>
-                <Picker Title="Selecciona item" ItemsSource="{Binding Items}" ItemDisplayBinding="{Binding Nombreitem}" HeightRequest="50" x:Name="Listitems" SelectedIndexChanged="Listitems_SelectedIndexChanged"/>
-                <Label Text="Selecciona 2 Nvl para saber cuantas Caphras nesecitas"/>
-                <Picker Title="Selecciona Nivel Base" ItemDisplayBinding="{Binding Nombre}" HeightRequest="50" x:Name="pickitembase"/>
-                <Picker Title="Selecciona Nivel objetivo" ItemDisplayBinding="{Binding Nombre}" HeightRequest="50" x:Name="pickitemobj"/>
-                <Button x:Name="btncalccap" Text="Calcular" Clicked="btncalccap_Clicked" HorizontalOptions="Center"/>
-                <Entry x:Name="calccap" HeightRequest="50" IsReadOnly="True"/>
-                <Button x:Name="Mostrarlista" Text="Ver tabla" Clicked="Mostrarlista_Clicked" HorizontalOptions="Center"/>
-                <ListView IsVisible="false" x:Name="ListCapItem" HasUnevenRows="true">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Grid Padding="10">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition  Height="*"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Padding="20"  Text="{Binding Nombre}" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                                    <Label FontSize="18" Grid.Column="1" Text="{Binding CantCap}" TextColor="Red" VerticalOptions="Center" HorizontalOptions="Center"/>
-                                </Grid>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <StackLayout Margin="30">
+                     <Picker Title="Selecciona item" TextColor="WhiteSmoke" ItemsSource="{Binding Items}" ItemDisplayBinding="{Binding Nombreitem}" HeightRequest="50" x:Name="Listitems" SelectedIndexChanged="Listitems_SelectedIndexChanged"/>
+                    <Picker Title="Selecciona Nivel Base" TextColor="WhiteSmoke"  ItemDisplayBinding="{Binding Nombre}" HeightRequest="50" x:Name="pickitembase"/>
+                    <Picker Title="Selecciona Nivel objetivo" TextColor="WhiteSmoke"  ItemDisplayBinding="{Binding Nombre}" HeightRequest="50" x:Name="pickitemobj"/>
+                    <Button x:Name="btncalccap" TextColor="WhiteSmoke" Text="Calcular" Clicked="btncalccap_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#161719"/>
+                     <Entry x:Name="calccap" HeightRequest="50" IsReadOnly="True"/>
+                      <Button x:Name="Mostrarlista" TextColor="WhiteSmoke" Text="Ver tabla" Clicked="Mostrarlista_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#161719"/>
+                     <ListView IsVisible="false" x:Name="ListCapItem" HasUnevenRows="true">
+                            <ListView.ItemTemplate>
+                                 <DataTemplate>
+                                      <ViewCell>
+                                          <Grid Padding="10">
+                                              <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition  Height="*"/>
+                                              </Grid.RowDefinitions>
+                                              <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                              </Grid.ColumnDefinitions>
+                                           <Label Padding="20"  Text="{Binding Nombre}" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                                           <Label FontSize="18" Grid.Column="1" Text="{Binding CantCap}" TextColor="Gold" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                          </Grid>
+                                      </ViewCell>
+                                 </DataTemplate>
+                            </ListView.ItemTemplate>
+                     </ListView>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
